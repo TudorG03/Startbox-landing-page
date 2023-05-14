@@ -1,0 +1,25 @@
+
+body {
+    background-image: url("resources/bg.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+
+nav > * {
+    font-weight: bold;
+}
+
+#hero-cover {
+    background-image: url("resources/bg.avif");
+}
+
+#offcanvasNav {
+    width: 100vw;
+}
+
