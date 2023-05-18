@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 
 body {
     background-image: url("resources/bg.avif"); 
@@ -7,8 +10,29 @@ body {
     padding: 0;
     font-size: 16px;
     z-index: -11; 
-    max-width: 100vw;
+    max-width: 100%;
     height: 100vh;
+}
+
+/* Scroll customization */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #b7b09e; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b7b09e; 
 }
 
 @media screen and (max-width: 1206px) {
@@ -75,4 +99,18 @@ nav > * {
   .card img {
     max-width: 100%;
     
+  }
+
+  .card:hover {
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    transform-origin: bottom;
+    animation-name: bounce;
+    animation-timing-function: ease-in-out;
+  }
+
+  @keyframes bounce {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-25px); -webkit-transform: translateY(-25px); -moz-transform: translateY(-25px); -ms-transform: translateY(-25px); -o-transform: translateY(-25px); }
+    100% { transform: translateY(0); }
   }
