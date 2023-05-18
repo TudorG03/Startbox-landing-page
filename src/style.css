@@ -47,12 +47,27 @@ body {
     }
 }
 
-.dropdown:hover > .dropdown-menu {
+@media screen and (min-width: 768px) {
+  .dropdown:hover > .dropdown-menu {
     display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav > ul:hover li:not(:hover) {
+    color: gray;
+  }
 }
 
 nav > * {
     font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-nav > li {
+    font-size: 2.25rem;
+    font-weight: 700;
+  }
 }
 
 #hero-header {
@@ -80,7 +95,7 @@ nav > * {
 }
 
 #cards-holder .card {
-    width: 50%;
+    width: 60%;
 }
 
 .dot {
@@ -113,4 +128,11 @@ nav > * {
     0%   { transform: translateY(0); }
     50%  { transform: translateY(-25px); -webkit-transform: translateY(-25px); -moz-transform: translateY(-25px); -ms-transform: translateY(-25px); -o-transform: translateY(-25px); }
     100% { transform: translateY(0); }
+  }
+
+  .card-footer {
+    background-color: transparent;
+    text-align: center;
+    font-weight: bold; 
+    font-size: 1.25rem;
   }
