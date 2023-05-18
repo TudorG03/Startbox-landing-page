@@ -11,8 +11,8 @@
   <body>
 
     <div class="content-wrap">
-      <div class="container-md" id="navbarContainer">
-        <nav class="navbar navbar-expand-md bg-body-tertiary py-4 bg-transparent">
+      <div class="container-fluid container-md" id="navbarContainer">
+        <nav class="navbar navbar-expand-md bg-body-tertiary  bg-transparent">
           <div class="container-fluid">
             <a class="navbar-brand" href="#">
               <img src="resources/logo.png" width="30px" height="auto" alt="logo">  
@@ -31,7 +31,7 @@
               </div>
               <div class="offcanvas-body">
                 <ul class="navbar-nav ms-auto">
-                  <li class="nav-item me-2 dropdown  fs-sm-6">
+                  <li class="nav-item me-2 my-5 dropdown  fs-sm-6">
                     <a class="nav-link active" href="#" role="button" data-bs-toggle="dropdown">
                       Home
                     </a>
@@ -41,7 +41,7 @@
                       <li><a class="dropdown-item" href="#">Something else here</a></li>
                     </ul>
                   </li>
-                  <li class="nav-item me-2 dropdown">
+                  <li class="nav-item me-2 my-5 dropdown">
                     <a class="nav-link active " href="#" role="button" data-bs-toggle="dropdown">
                       Services
                     </a>
@@ -51,7 +51,7 @@
                       <li><a class="dropdown-item" href="#">Something else here</a></li>
                     </ul>
                   </li>
-                  <li class="nav-item me-2 dropdown">
+                  <li class="nav-item me-2 my-5 dropdown">
                     <a class="nav-link active " href="#" role="button" data-bs-toggle="dropdown">
                       Pages
                     </a>
@@ -61,7 +61,7 @@
                       <li><a class="dropdown-item" href="#">Something else here</a></li>
                     </ul>
                   </li>
-                  <li class="nav-item me-2 dropdown">
+                  <li class="nav-item me-2 my-5 dropdown">
                     <a class="nav-link active " href="#" role="button" data-bs-toggle="dropdown">
                       Portfolio
                     </a>
@@ -71,7 +71,7 @@
                       <li><a class="dropdown-item" href="#">Something else here</a></li>
                     </ul>
                   </li>
-                  <li class="nav-item me-2 dropdown">
+                  <li class="nav-item me-2 my-5 dropdown">
                     <a class="nav-link active " href="#" role="button" data-bs-toggle="dropdown">
                       Blog
                     </a>
@@ -81,7 +81,7 @@
                       <li><a class="dropdown-item" href="#">Something else here</a></li>
                     </ul>
                   </li>
-                  <li class="nav-item me-5 dropdown">
+                  <li class="nav-item me-2 my-5 dropdown">
                     <a class="nav-link active " href="#" role="button" data-bs-toggle="dropdown">
                       Contact
                     </a>
@@ -95,17 +95,93 @@
               </div>  
             
           </div>
-          <a href="" class="btn d-none d-sm-inline-flex rounded-5 btn btn-danger order-2 order-md-last ">Buy Now</a>
+          <a href="" class="btn d-none d-sm-inline-flex rounded-5 btn btn-danger order-2 my-5 order-md-last ">Buy Now</a>
         </nav>
       </div>
 
-      <div class="container justify-content-center">
-        <h1>Open the Startbox Now.<br>Build your future.</h1>
-        <h4>Corporate template for business, portfolio, agencies, freelancers & blog. Creative design, modern and thoughtful functionality.</h4>
+      <div class="container my-5" id="hero-cover">
+        <div class="align-items-center justify-content-center d-flex text-center" id="hero-header">
+          <img src="resources/yellow-line.png" alt="yellow" id="line">
+          Open the Startbox Now.<br>Build your future.
+        </div>
+        <h5 class="text-center">Corporate template for business, portfolio, agencies, freelancers & blog.<br>Creative design, modern and thoughtful functionality.</h>
+      </div>
+
+      <div class="d-grid" id="cards-holder">
+        <div class="row row-cols-1 row-cols-md-2 my-5">
+          <div class="col d-flex justify-content-center justify-content-md-end align-content-center">
+            <div class="card">
+              <div class="card-header d-flex flex-row p-1">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+              <img src="resources/main-corporate.jpg" class="card-image" alt="...">
+            </div>
+            
+          </div>
+          <div class="col d-flex justify-content-center justify-content-md-start align-content-center">
+            <div class="card">
+              <div class="card-header d-flex flex-row p-1">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+              <img src="resources/main-corporate.jpg" class="card-image" alt="...">
+            </div>
+            
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 my-5">
+          <div class="col d-flex justify-content-center justify-content-md-end align-content-center">
+            <div class="card">
+              <div class="card-header d-flex flex-row p-1">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+              <img src="resources/main-corporate.jpg" class="card-image" alt="...">
+            </div>
+            
+          </div>
+          <div class="col d-flex justify-content-center justify-content-md-start align-content-center">
+            <div class="card">
+              <div class="card-header d-flex flex-row p-1">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+              <img src="resources/main-corporate.jpg" class="card-image" alt="...">
+            </div>
+            
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 my-5">
+          <div class="col d-flex justify-content-center justify-content-md-end align-content-center">
+            <div class="card">
+              <div class="card-header d-flex flex-row p-1">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+              <img src="resources/main-corporate.jpg" class="card-image" alt="...">
+            </div>
+            
+          </div>
+          <div class="col d-flex justify-content-center justify-content-md-start align-content-center">
+            <div class="card">
+              <div class="card-header d-flex flex-row p-1">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+              <img src="resources/main-corporate.jpg" class="card-image" alt="...">
+            </div>
+            
+          </div>
+        </div>
       </div>
     </div>
-   
-
 
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
