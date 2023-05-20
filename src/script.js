@@ -6,10 +6,8 @@
 //     bsCollapse.style.backgroundColor = "#FFF";
 // })
 
-const menuToggle = document.getElementsByClassName("navbar-toggler");
+const navbar = document.getElementsByName("nav");
 
-menuToggle.addEventListener('click', () => {
-    document.getElementById("navbarContainer").style.backgroundColor = "#FFF"; 
-})
-
-console.log("AAA");
+function navBackground() {
+    navbar.style.backgroundColor = "#FFF";
+}

@@ -54,9 +54,23 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  nav > ul:hover li:not(:hover) {
+   nav ul:hover #nav-hover:not(:hover) {
     color: gray;
-  }
+   }
+
+   .dropdown-item {
+    font-size: 1.1rem;
+    font-weight: 500;
+   }
+
+    .dropdown-item:hover {
+     background-color: #FFF;
+    }
+
+   nav .dropdown-menu:hover .dropdown-item:not(:hover) {
+    color: gray;
+   }
+  
 }
 
 nav > * {
@@ -107,8 +121,14 @@ nav > * {
   }
 
   #cards-holder {
-    position: absolute;
+    position: relative;
     background-color: transparent transparent;
+  }
+
+  @media screen and (max-width: 768px) {
+    #cards-holder {
+      background-color: #FFF;
+    }
   }
 
   .card img {
@@ -116,7 +136,7 @@ nav > * {
     
   }
 
-  .card:hover {
+  #cards-holder .card:hover {
     animation-duration: 1s;
     animation-iteration-count: 1;
     transform-origin: bottom;
@@ -136,3 +156,23 @@ nav > * {
     font-weight: bold; 
     font-size: 1.25rem;
   }
+
+ @media screen and (min-width: 768px) {
+    #carousel-holder {
+      background-image: url("resources/black-bg.avif");
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+ }
+
+ @media screen and (max-width: 992px) {
+  #carousel-grow {
+    width: 75% !important;
+  }
+
+  #carousel-holder .card-footer {
+    text-align: center !important;
+    padding: 0;
+  }
+ }
+
