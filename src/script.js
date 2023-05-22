@@ -1,10 +1,11 @@
-
-
-
-const navbar = document.getElementsByName("nav");
-
-function navBackground() {
-    navbar.style.backgroundColor = "#FFF";
-    alert("AAA");
-}
-
+const nav = document.getElementsByTagName('nav');
+window.onscroll = function () { 
+    if (document.body.scrollTop >= 200 ) {
+        myNav.classList.add("nav-colored");
+        myNav.classList.remove("nav-transparent");
+    } 
+    else {
+        myNav.classList.add("nav-transparent");
+        myNav.classList.remove("nav-colored");
+    }
+};

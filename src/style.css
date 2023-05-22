@@ -41,6 +41,9 @@ body {
   background: #b7b09e; 
 }
 
+.nav-colored { background-color:#FFF; }
+.nav-transparent { background-color: transparent !important;}
+
 @media screen and (max-width: 1206px) {
     body {
         background-image: none;
